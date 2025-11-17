@@ -1,0 +1,70 @@
+REQ-001: O Sistema deve permitir a ciração de novas tarefas:
+    Casos de Teste associados: CT-001, CT-002
+
+    Cenário CT-001: Sucesso
+    Objetivo: Verificar se uma nova terefa pode ser criada com todos os campos obrigatórios preenchidos.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Criar Tarefa"
+    2. Preencher todos os campos obrigatórios do formulário.
+    3. Clicar no botão "Criar".
+
+    Resultado esperado: A tarefa é criada com sucesso e o usuário é redirecionado para a página de detalhes da tarefa.
+
+REQ-002: Criar uma tarefa sem preencher um campo obrigatório.
+    Objetivo: Verificação de ver se o sistema impedirá o usuário de criar uma tarefa caso o campo obrigatório não for preenchido.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Criar Tarefa"
+    2. Preencher todos os campos obrigatórios do formulário, exceto um.
+    3. Clicar no botão "Criar".
+
+    Resultado esperado: O sistema exibe uma mensagem de erro informando que todos os campos obrigatórios devem ser preenchidos.
+REQ-003: O Sistema deve permitir a edição de tarefas existentes:
+    Objetivo: Verificar se o sistema permite o usuário editar uma tarefa existente.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Tarefas"
+    2. Selecionar uma tarefa existente.
+    3. Clicar no botão "Editar".
+    4. Modificar os campos desejados.
+    5. Clicar no botão "Salvar".
+
+    Resultado esperado: A tarefa é atualizada com sucesso e o usuário é redirecionado para a página de detalhes da tarefa.
+REQ-004: As tarefas podem ser classificadas por prioridade (Alta, Média, Baixa):
+    Objetivo: Ver se o sistema permite o usuário classificar tarefas por prioridade.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Tarefas"
+    2. Selecionar uma tarefa existente.
+    3. Clicar no botão "Classificar".
+    4. Escolher a nova prioridade (Alta, Média, Baixa).
+    5. Clicar no botão "Salvar".
+
+    Resultado esperado: A prioridade da tarefa é atualizada com sucesso e o usuário é redirecionado para a página de detalhes da tarefa.
+REQ-005: O sistema deve atribuir tarefas para usuários específicos.
+    Objetivo: Verificar se o sistema permite atribuir tarefas a usuários específicos.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Tarefas"
+    2. Selecionar uma tarefa existente.
+    3. Clicar no botão "Atribuir".
+    4. Escolher um usuário da lista.
+    5. Clicar no botão "Salvar".
+
+    Resultado esperado: A tarefa é atribuída ao usuário selecionado e o sistema exibe uma mensagem de confirmação.
+REQ-006: O sistema deve permitir acompanhamento do progresso das tarefas.
+    Objetivo: Verificar se o sistema permite o acompanhamento do progresso das tarefas.
+    Pré-condições: Usuário estar logado e na página principal do sistema.
+
+    Passos:
+    1. Navegar até a seção de "Tarefas"
+    2. Selecionar uma tarefa existente.
+    3. Visualizar o progresso da tarefa.
+
+    Resultado esperado: O sistema exibe informações detalhadas sobre o progresso da tarefa, incluindo etapas concluídas e pendentes.
